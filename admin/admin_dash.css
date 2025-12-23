@@ -1,0 +1,42 @@
+body{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/004/487/827/non_2x/seamless-pattern-of-hairdressing-tools-scissors-combs-spray-rose-butterfly-beads-perfume-profile-of-a-girl-with-a-hairstyle-image-free-vector.jpg');
+}
+nav {
+    background-color: black; /* Set the background color */
+    position: fixed; /* Position the nav bar */
+    top: 0; /* Align it to the top */
+    bottom: 0; /* Align it to the bottom */
+    left: 0; /* Align it to the left */
+    width: 200px; /* Set the width as needed */
+    padding-top: 20px; /* Add some top padding for better appearance */
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin-bottom: 10px; /* Add some space between items */
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.content {
+    margin-left: 220px; /* Adjust margin to accommodate the nav bar */
+    padding: 20px; /* Add padding to the content */
+    text-align: center; /* Center the content horizontally */
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    background-color:#eedff0;
+    font-size: 20px;
+    border: 3px solid black;
+    padding: 20px;
+}
+h1{
+    font-size: 55px;
+}

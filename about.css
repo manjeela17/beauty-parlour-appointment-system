@@ -1,0 +1,89 @@
+/* styles.css */
+
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Add flex display */
+    align-items: center; /* Vertically center items */
+}
+
+.box img {
+    max-width: 200px; /* Adjust the width of the image */
+    margin-right: 20px; /* Add space between image and text */
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar {
+    margin-top: 10px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.navbar a.button {
+    background-color: #ff9800;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+    .navbar {
+        display: block;
+        margin-top: 10px;
+    }
+    .navbar a {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .navbar a.button {
+        margin-top: 10px;
+    }
+    .box {
+        flex-direction: column; /* Stack items vertically on small screens */
+        text-align: center; /* Center text on small screens */
+    }
+    .box img {
+        margin: 0 auto 20px; /* Center image on small screens */
+    }
+}

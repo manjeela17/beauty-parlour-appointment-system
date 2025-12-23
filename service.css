@@ -1,0 +1,146 @@
+/* Container styles */
+.container {
+    max-width: 960px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Services section styles */
+.services {
+    /* background-color: #f9f9f9; Light gray background */
+    padding: 50px 0; /* Adjust padding as needed */
+    text-align: center;
+}
+
+/* Title styles */
+.services h2 {
+    color: #df0e6f;
+    font-size: 60px;
+    margin-bottom: 10px; /* Add some spacing below the title */
+}
+
+/* List styles */
+.services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* List item styles */
+.services ul li {
+    margin-bottom: 10px; /* Add spacing between list items */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background color and transform */
+}
+
+/* Link styles */
+.services ul li a {
+    color: #81d83a; /* Blue link color */
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth transition for link color */
+    font-size: 40px;
+    margin-top: 50;
+}
+
+/* Hover effect for links */
+.services ul li a:hover {
+    color: #a5f39f; /* Darker blue color on hover */
+}
+
+/* Hover effect for list items */
+.services ul li:hover {
+    background-color: #e0e0e0; /* Light gray background color on hover */
+    transform: scale(1.1); /* Scale up the list item on hover */
+}
+/*
+body{
+  background-image: url(https://imgs.search.brave.com/1KRgtYJ4K5pHssvmDymTrIzDNZWnG3y8S1MbN6IcMF4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE5/NTg1MDc3Ni9waG90/by95b3VuZy1oYWly/c3R5bGlzdC1pbi1i/ZWF1dHktc2Fsb24u/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PU5tT0ZvYUZGMVlD/UFdvZENkaWIycXND/eTBmeDM2WXpLMzZf/OFNvdG5XcFk9);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    
+
+/* Container styles */
+.container {
+    max-width: 960px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Services section styles */
+.services {
+  
+    padding: 50px 0; /* Adjust padding as needed */
+    text-align: center;
+}
+
+/* Title styles */
+.services h2 {
+    margin-top: -30px;
+    font-size: 50px; /* Adjust font size */
+    margin-bottom: 20px; /* Add some spacing below the title */
+    position: relative; /* Required for absolute positioning */
+}
+
+/* Animation for moving text */
+@keyframes moveText {
+    0% {
+        left: 0; /* Start position */
+    }
+    100% {
+        left: 100px; /* End position */
+    }
+}
+
+/* Apply animation to the "Our Services" heading */
+.services{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap:2rem;
+  /* background: #F08080; */
+}
+.services .box{
+  text-align: center;
+  padding:2rem;
+}
+.services .box img{
+  height:10rem;
+}
+.services .box h3{
+  padding:1rem 0;
+  font-size: 2rem;
+  color: #fff;
+}
+.services .box p{
+  line-height: 2;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.service-box {
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin: 10px; /* Add margin to create space between items */
+    text-align: center;
+    flex: 0 0 calc(33.33% - 20px); /* Calculate width for three items per row */
+    max-width: calc(33.33% - 20px); /* Ensure each item takes one-third of the container width */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+.service-box img {
+    width: 100%; /* Image takes full width of the box */
+    height: auto;
+}
+.service-box p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}

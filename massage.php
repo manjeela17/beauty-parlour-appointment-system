@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Beauty parlour appointment </title>
+    
+        <link rel="stylesheet" href="styles.css">
+       
+        <style>
+        body {
+    background-image: url('https://us.123rf.com/450wm/juliaemelianova/juliaemelianova2101/juliaemelianova210100065/162777587-seamless-pattern-manicure-tools-on-a-pink-background-vector-illustration-hand-drawing-manicure-tools.jpg?ver=6');
+    background-size: auto;
+    background-repeat: repeat; /* Adjust repeat if needed */
+    background-position: center; /* Center the background image */
+}
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color:#f7dcee;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .mprice-list {
+            
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .mprice-list h2 {
+            font-size: 35px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .mprice-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mprice-list li {
+            font-size: 25px;
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        .mitem {
+            font-weight: bold;
+        }
+
+        .price {
+           
+            color: #ff69b4; /* Pink color */
+            font-weight: bold;
+        }
+
+        .button{
+    font-size: 15px;
+}
+     
+    </style>
+    </head>
+    <body>
+    
+    <section id="header" class="header">
+    <a href="#" class="logo">HEY!GIRL'S</a>
+    <nav class="navbar">
+    <a href="index.php">Home</a>
+        <a href="about.php">About Us</a>
+        <a href="service.php">Services</a>
+        <a href="contact.php">Contact Us</a>
+       
+        <?php
+        session_start();
+        if(isset($_SESSION['user_id'])){
+        
+           echo '<a href="booking_history.php">Booking history</a>';
+           echo '<a href="logout.php">Logout</a>';
+           echo '<a href="book.php" class="button">Book your appointment Now</a>';
+        }
+        else{
+            echo '<a href="login.php">Login</a> | <a href="register.php">Register</a>';
+        }
+        ?>
+    </nav>
+    
+    </section>
+
+
+
+<div class="container">
+    <div class="mprice-list">
+    <h2>Massage</h1>
+         
+        <ul>
+        <li><span class="mitem">Full Body Massage (1 hr)</span> - <span class="price">Rs.3500</span></li>
+        <li><span class="mitem">Foot Massage (30 min)</span> - <span class="price">Rs.1800</span></li>
+        <li><span class="mitem">Spinal Massage (30 min)</span> - <span class="price">Rs.2000</span></li> 
+            <li><span class="mitem">Head oil massage</span> - <span class="price">Rs.1000</span></li>
+         
+        </ul>
+     </div>
+ 
+</div>
+</p> <a href="service.php" class="button"> Back to Service</a>        
+</body>
+</html>
+
+
+

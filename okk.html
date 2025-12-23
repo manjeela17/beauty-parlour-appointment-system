@@ -1,0 +1,13 @@
+<?php
+session_start();
+if (isset($_SESSION['service_id'])) {
+    $service_id = $_SESSION['service_id'];
+} else {  
+    $service_id = null; 
+}
+include '../class/a_cat_class.php'; 
+include '../class/a_cat_contro.php'; 
+
+$categories = new CatControl($service_id);
+$board = $categories->getboard();
+?>
